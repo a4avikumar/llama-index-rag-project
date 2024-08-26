@@ -1,0 +1,90 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pip specific
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest
+.cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Hugging Face cache and datasets
+.cache/huggingface/
+datasets/
+
+# LLaMA Index (LlamaIndex)
+index_store/
+
+# Streamlit
+.streamlit/
+
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore log files
+*.log
+
+# Ignore other temporary files
+*.temp
+*.tmp
+*.bak
+*.swp
+
+# Ignore data files
+*.csv
+*.tsv
+*.json
+
+# Ignore large files
+*.tar.gz
+*.zip
+*.tar
+*.gz
+*.rar
