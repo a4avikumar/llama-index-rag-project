@@ -58,8 +58,6 @@ dmypy.json
 .cache/huggingface/
 datasets/
 
-# LLaMA Index (LlamaIndex)
-index_store/
 
 # Streamlit
 .streamlit/
@@ -77,10 +75,6 @@ index_store/
 *.bak
 *.swp
 
-# Ignore data files
-*.csv
-*.tsv
-*.json
 
 # Ignore large files
 *.tar.gz
