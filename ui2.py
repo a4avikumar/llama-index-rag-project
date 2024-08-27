@@ -117,7 +117,7 @@ with st.sidebar:
         # save_pdf_data_to_file(data)
         st.success("PDF file successfully loaded!")
         pakistan_index=get_index(data,"pakistan")
-        pakistan_engine=pakistan_index.as_query_engine(ServiceContext=ServiceContext)
+        pakistan_engine=pakistan_index.as_query_engine(llm=llama2)
         tools = [
         note_engine,
         # QueryEngineTool(
