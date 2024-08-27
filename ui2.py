@@ -135,7 +135,7 @@ with st.sidebar:
            ),
         ),
         ]
-        st.session_state.agent2 = ReActAgent.from_tools(tools, llm=llama2, verbose=False, context=context)
+        st.session_state.agent2 = ReActAgent.from_tools(tools, llm=llama2, verbose=True, context=context)
 
     
         
