@@ -39,7 +39,7 @@ from llama_index.core.agent import ReActAgent
 
 embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
-service_context = ServiceContext.from_defaults(embed_model=embed_model, llm=llama2)
+# service_context = ServiceContext.from_defaults(embed_model=embed_model, llm=llama2)
 
 
 
@@ -49,12 +49,12 @@ def get_index(data, index_name):
     index = None
     if not os.path.exists(index_name):
         print("building index", index_name)
-        index = VectorStoreIndex.from_documents(data, show_progress=True,service_context=service_context)
+        index = VectorStoreIndex.from_documents(data, show_progress=True,embed_model=embed_model)
         index.storage_context.persist(persist_dir=index_name)
     else:
         index = load_index_from_storage(
             StorageContext.from_defaults(persist_dir=index_name),
-            service_context=service_context
+            embed_model=embed_model
         )
     return index
 
