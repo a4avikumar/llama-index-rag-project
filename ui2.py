@@ -201,7 +201,7 @@ if selected == "Chat Interface":
             response = st.session_state.agent2.query(query)
         else:
             response = agent.query(query)
-        text = response.response
+        text = response
         # docs = response.references
         chat_box.ai_say(
             [
