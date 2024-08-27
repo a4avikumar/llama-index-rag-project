@@ -135,8 +135,7 @@ with st.sidebar:
            ),
         ),
         ]
-        agent2=ReActAgent.from_tools(tools,llm=llama2,verbose=False,context=context)
-
+        st.session_state.agent2 = ReActAgent.from_tools(tools, llm=llama2, verbose=False, context=context)
 
     
         
@@ -198,8 +197,8 @@ if selected == "Chat Interface":
         #                             kwargs={"chat_history_id": chat_history_id, "history_index": len(chat_box.history) - 1})
         # else:
         # Non-streaming response from agent
-        if file:
-            response = agent2.query(query)
+        if "agent2" in st.session_state:
+            response = st.session_state.agent2.query(query)
         else:
             response = agent.query(query)
         text = response.response
