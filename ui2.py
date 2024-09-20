@@ -264,7 +264,7 @@ from llama_index.core.agent import ReActAgent
 
 
 embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
-llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
+llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
 # service_context = ServiceContext.from_defaults(embed_model=embed_model, llm=llama2)
 
 
