@@ -8,7 +8,7 @@ from llama_index.core.tools import QueryEngineTool,ToolMetadata
 from llama_index.core.agent import ReActAgent
 from pdf import pakistan_engine
 
-llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
+llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
 
 
 population_path=os.path.join("data","population.csv")
