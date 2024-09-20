@@ -18,7 +18,7 @@ from llama_index.core import (
 from llama_index.llms.groq import Groq
 
 embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
-llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
+llama2 = Groq(model="llama-3.1-70b-versatile", api_key="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")
 # service_context = ServiceContext.from_defaults(embed_model=embed_model, llm=llama2)
 
 
